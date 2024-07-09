@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import Counter from './components/Counter';
+import TodoList from './components/TodoList';
+import ToggleText from './components/ToogleText';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Exercícios useState</h1>
+      <div className="component">
+        <h2>Contador</h2>
+        <Counter />
+      </div>
+      <div className="component">
+        <h2>Alternância de Texto</h2>
+        <ToggleText />
+      </div>
+      <div className="component">
+        <h2>Lista de Tarefas</h2>
+        <TodoList />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
